@@ -1,68 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
     margin: 0;
     padding: 0;
 
-    
-  }
-  
-  header, main, footer {
-    width: 100%;
-  }
-  
-  header {
-    min-height: 100vh;
- 
     background: linear-gradient(180deg, skyblue, gray);
-      font-family: "Poppins", sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin: 0;
-      color:cyan;
-  
-    padding: 20px;
-   
   }
+  header {
+ 
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 100%;
+  color:cyan;
+}
+.header-img{
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 95%;
+}
   
-
-  h1{
+.header-text{
  text-align: center;
   }
+.container {
    
-  
-  
-  .container {
-    display: grid;
-    grid-template-columns: 2, 1fr; 
-    width: 100%;
     max-width: 400px;
     overflow: hidden;
-    position: relative;
+  
     min-height: 100vh;
     margin: 0 auto;
     height: 300px;
   }
   .grid-container {
-    display: grid;
+  display: grid;
     grid-template-columns: repeat(2, 1fr); 
     grid-gap: 10px; 
+    width:100%;
+    
   }
   
   .grid-item {
     text-align: center;
     border: 1px solid gray;
+    margin: 10px;
   }
-  h3{
+  .img-text{
     margin: 20px;
   }
   
   img {
-    width: 90%;
+    width: 100%;
     height: 300px; 
     object-fit: cover; 
     object-position: center center; 
     border-radius: 15px;
+   
   }
   
   footer {
@@ -74,9 +65,23 @@ body {
   
  
   @media (max-width: 768px) {
-    .header{
-        padding: 0px;
+    .header {
+     
+      text-align: center;
+    
+
+     
+      padding: 15px;  img {
+        width: 100%;
+        height: auto;
     }
+      font-size: 18px; 
+    
+    }
+    img {
+      width: 100%;
+      height: auto;
+  }
     
         .grid-container {
             display: grid;
